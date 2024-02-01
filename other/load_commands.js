@@ -2,7 +2,7 @@ const fs = require("fs");
 const Discord = require("discord.js");
 const commandFolders = fs.readdirSync("./commands");
 
-ts.start = async function(client) {
+exports.start = async function(client) {
   client.commands = new Discord.Collection();
   console.log("スラッシュコマンドの読み込み処理を開始します。")
   // commandsフォルダの中のサブフォルダを読み込む
