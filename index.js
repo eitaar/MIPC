@@ -1,6 +1,6 @@
 const http = require('http');
-const {bestprice} = require('db.js');
-const { helpembed, itemlistembed } = require('embeds.js');
+const {bestprice} = require('./db.js');
+const { helpembed, itemlistembed } = require('./embeds.js');
 const {token} = process.env
 const { Client, GatewayIntentBits} = require('discord.js');
 const deploy_commands = require("other/deploy-commands.js");
