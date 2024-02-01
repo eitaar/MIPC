@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, ButtonBuilder, ButtonStyle, ActionRowBuilder} = require("discord.js");
-const { bestprice } = require("/home/runner/MIPC-with-db/db.js");
+const { bestprice } = require("db.js");
 
 module.exports = {
   data: new SlashCommandBuilder()

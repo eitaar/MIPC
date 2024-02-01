@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-const { itemlist } = require('/home/runner/MIPC-with-db/db.js')
+const { itemlist } = require('db.js')
 
 module.exports = {
   data: new SlashCommandBuilder()
