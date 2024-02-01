@@ -5,12 +5,8 @@ const fs = require("fs");
 const Discord = require("discord.js");
 const commandFolders = fs.readdirSync("./commands");
 
-// コマンド読み込み用
 const commands = [];
 
-/**
- * スラッシュコマンド登録処理
- */
 exports.start = async function() {
   // commandsフォルダの中のサブフォルダを読み込む
   for (const folder of commandFolders) {
@@ -21,7 +17,6 @@ exports.start = async function() {
       commands.push(command.data.toJSON());
     }
   }
-  // コマンド登録処理
   (async () => {
     try {
       console.log(`${commands.length}個のコマンドの登録を開始します。`);
