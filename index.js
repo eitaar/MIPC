@@ -3,9 +3,9 @@ const {bestprice} = require('./db.js');
 const { helpembed, itemlistembed } = require('./embeds.js');
 const {token} = process.env
 const { Client, GatewayIntentBits} = require('discord.js');
-const deploy_commands = require("other/deploy-commands.js");
-const interaction_create_handler = require("other/interaction_create_handler.js");
-const load_commands = require("other/load_commands.js");
+const deploy_commands = require("./other/deploy-commands.js");
+const interaction_create_handler = require("./other/interaction_create_handler.js");
+const load_commands = require("./other/load_commands.js");
 const bot = new Client({
     intents: [
         GatewayIntentBits.Guilds,
