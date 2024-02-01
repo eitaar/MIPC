@@ -1,5 +1,5 @@
 const { dbuser, dbpassword, dburl } = process.env
-const { bpembed, listembed, itemlistembed } = require('./embeds.js');
+const { bpembed, listembed, itemlistembed } = require('embeds.js');
 const { Pool } = require("pg")
 const db = new Pool({
   user: dbuser,
