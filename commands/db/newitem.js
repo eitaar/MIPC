@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require("discord.js");
-const { newitem, itemlist } = require("db.js");
+const { newitem, itemlist } = require("../../db.js");
 const { adminid } = process.env;
 
 module.exports = {
